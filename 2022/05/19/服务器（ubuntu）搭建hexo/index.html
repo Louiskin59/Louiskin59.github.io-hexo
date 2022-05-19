@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"louiskin59.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="首页只显示部分">
+  <meta name="description" content="一、本地  配置ssh免密钥登陆服务器  ssh-copy-id 用户名@ip地址二、服务端  安装 nginx  sudo apt-get install nginx # 安装nginxnginx相关命令 nginx -t # 查看nginx配置文件，并检查配置是否正确nginx -s reload # 重新加载nginx -s reopend # 重新启动nginx -s stop # 关闭配">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用命令">
-<meta property="og:url" content="https://louiskin59.github.io/2022/05/11/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="服务器（ubuntu）搭建hexo">
+<meta property="og:url" content="https://louiskin59.github.io/2022/05/19/%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88ubuntu%EF%BC%89%E6%90%AD%E5%BB%BAhexo/index.html">
 <meta property="og:site_name" content="金九亿的奇妙冒险">
-<meta property="og:description" content="首页只显示部分">
+<meta property="og:description" content="一、本地  配置ssh免密钥登陆服务器  ssh-copy-id 用户名@ip地址二、服务端  安装 nginx  sudo apt-get install nginx # 安装nginxnginx相关命令 nginx -t # 查看nginx配置文件，并检查配置是否正确nginx -s reload # 重新加载nginx -s reopend # 重新启动nginx -s stop # 关闭配">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-11T01:18:35.000Z">
-<meta property="article:modified_time" content="2022-05-13T07:39:32.128Z">
+<meta property="article:published_time" content="2022-05-19T01:14:43.000Z">
+<meta property="article:modified_time" content="2022-05-19T01:15:26.356Z">
 <meta property="article:author" content="Joey Kin">
 <meta property="article:tag" content="blog tips">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://louiskin59.github.io/2022/05/11/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="https://louiskin59.github.io/2022/05/19/%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88ubuntu%EF%BC%89%E6%90%AD%E5%BB%BAhexo/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>常用命令 | 金九亿的奇妙冒险</title>
+  <title>服务器（ubuntu）搭建hexo | 金九亿的奇妙冒险</title>
   
 
 
@@ -152,7 +152,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://louiskin59.github.io/2022/05/11/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="https://louiskin59.github.io/2022/05/19/%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88ubuntu%EF%BC%89%E6%90%AD%E5%BB%BAhexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -165,7 +165,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          常用命令
+          服务器（ubuntu）搭建hexo
         </h1>
 
         <div class="post-meta">
@@ -174,16 +174,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-05-11 09:18:35" itemprop="dateCreated datePublished" datetime="2022-05-11T09:18:35+08:00">2022-05-11</time>
+              <time title="创建时间：2022-05-19 09:14:43 / 修改时间：09:15:26" itemprop="dateCreated datePublished" datetime="2022-05-19T09:14:43+08:00">2022-05-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-13 15:39:32" itemprop="dateModified" datetime="2022-05-13T15:39:32+08:00">2022-05-13</time>
-              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -191,7 +185,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -200,7 +194,6 @@
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
             </span>
-            <div class="post-description">首页只显示部分</div>
 
         </div>
       </header>
@@ -211,96 +204,42 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<p>新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">_config.yml</a> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;post title with whitespace&quot;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>-p</code>, <code>--path</code></td>
-<td align="left">自定义新文章的路径</td>
-</tr>
-<tr>
-<td align="left"><code>-r</code>, <code>--replace</code></td>
-<td align="left">如果存在同名文章，将其替换</td>
-</tr>
-<tr>
-<td align="left"><code>-s</code>, <code>--slug</code></td>
-<td align="left">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
-</tr>
-</tbody></table>
-<p>默认情况下，Hexo 会使用文章的标题来决定文章文件的路径。对于独立页面来说，Hexo 会创建一个以标题为名字的目录，并在目录中放置一个 <code>index.md</code> 文件。你可以使用 <code>--path</code> 参数来覆盖上述行为、自行决定文件的目录：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page --path about/me &quot;About me&quot;</span><br></pre></td></tr></table></figure>
-
-<p>以上命令会创建一个 <code>source/about/me.md</code> 文件，同时 Front Matter 中的 title 为 <code>&quot;About me&quot;</code></p>
-<p>注意！title 是必须指定的！如果你这么做并不能达到你的目的：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page --path about/me</span><br></pre></td></tr></table></figure>
-
-<p>此时 Hexo 会创建 <code>source/_posts/about/me.md</code>，同时 <code>me.md</code> 的 Front Matter 中的 title 为 <code>&quot;page&quot;</code>。这是因为在上述命令中，hexo-cli 将 <code>page</code> 视为指定文章的标题、并采用默认的 <code>layout</code>。</p>
-<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>生成静态文件。</p>
-<table>
-<thead>
-<tr>
-<th align="left">选项</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>-d</code>, <code>--deploy</code></td>
-<td align="left">文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td align="left"><code>-w</code>, <code>--watch</code></td>
-<td align="left">监视文件变动</td>
-</tr>
-<tr>
-<td align="left"><code>-b</code>, <code>--bail</code></td>
-<td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td>
-</tr>
-<tr>
-<td align="left"><code>-f</code>, <code>--force</code></td>
-<td align="left">强制重新生成文件 Hexo 引入了差分机制，如果 <code>public</code> 目录存在，那么 <code>hexo g</code> 只会重新生成改动的文件。 使用该参数的效果接近 <code>hexo clean &amp;&amp; hexo generate</code></td>
-</tr>
-<tr>
-<td align="left"><code>-c</code>, <code>--concurrency</code></td>
-<td align="left">最大同时生成文件的数量，默认无限制</td>
-</tr>
-</tbody></table>
-<p>该命令可以简写为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
-<table>
-<thead>
-<tr>
-<th align="left">选项</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>-p</code>, <code>--port</code></td>
-<td align="left">重设端口</td>
-</tr>
-<tr>
-<td align="left"><code>-s</code>, <code>--static</code></td>
-<td align="left">只使用静态文件</td>
-</tr>
-<tr>
-<td align="left"><code>-l</code>, <code>--log</code></td>
-<td align="left">启动日记记录，使用覆盖记录格式</td>
-</tr>
-</tbody></table>
+        <p>一、本地</p>
+<ol>
+<li>配置ssh免密钥登陆服务器</li>
+</ol>
+<p>ssh-copy-id 用户名@ip地址<br>二、服务端</p>
+<ol>
+<li>安装 nginx</li>
+</ol>
+<p>sudo apt-get install nginx # 安装nginx<br>nginx相关命令</p>
+<p>nginx -t # 查看nginx配置文件，并检查配置是否正确<br>nginx -s reload # 重新加载<br>nginx -s reopend # 重新启动<br>nginx -s stop # 关闭<br>配置 Nginx</p>
+<p>cd &#x2F;etc&#x2F;nginx&#x2F;sites-enabled</p>
+<h1 id="如果有-default-这个文件，可以将里面的内容先注释掉，或者删掉default这个文件"><a href="#如果有-default-这个文件，可以将里面的内容先注释掉，或者删掉default这个文件" class="headerlink" title="如果有 default 这个文件，可以将里面的内容先注释掉，或者删掉default这个文件"></a>如果有 default 这个文件，可以将里面的内容先注释掉，或者删掉default这个文件</h1><h1 id="然后"><a href="#然后" class="headerlink" title="然后"></a>然后</h1><p>vim hexo</p>
+<h1 id="写入"><a href="#写入" class="headerlink" title="写入"></a>写入</h1><p>server {<br>    listen       80;<br>    root   &#x2F;www&#x2F;hexo; # 这里的意思是挂载&#x2F;www&#x2F;hexo目录</p>
+<pre><code>location / &#123;
+ index  index.html index.htm;
+&#125;
+</code></pre>
+<p>}<br>2. 配置 git 远程仓库</p>
+<p>有些文章是先新建一个用户，然后在该用户下去新建 git 远程仓库，由于我当时配置有问题，一直推不上去，就不新建用户，直接在root下配置</p>
+<p>cd &#x2F;wwww  # 随便在哪里创建都可以</p>
+<p>git init –bare hexo.git # 初始化一个仓库</p>
+<p>cd &#x2F;www&#x2F;hexo.git&#x2F;hooks</p>
+<p>vim post-receive  &#x2F;&#x2F;这个文件中的脚本会监听这个git的仓库的每一次push上来的事件，push到这个仓库一次，里面的脚本就执行一次</p>
+<p>然后写入 </p>
+<p>#!&#x2F;bin&#x2F;sh<br>git –work-tree&#x3D;&#x2F;www&#x2F;hexo –git-dir&#x3D;&#x2F;www&#x2F;hexo.git checkout -f  # 前面的&#x2F;www&#x2F;hexo与上述nginx配置挂载的目录一致<br>这个脚本的意思就是把&#x2F;www&#x2F;hexo.git 这个仓库的分支同步到&#x2F;www&#x2F;hexo文件夹中</p>
+<p>然后更改权限</p>
+<p>chmod 777 post-receive<br>三、本地</p>
+<ol>
+<li>hexo网站搭建</li>
+</ol>
+<p>hexo ini # 初始化博客<br>然后进行配置，详见 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<ol start="2">
+<li>修改 _config.yml</li>
+</ol>
+<p>deploy:<br>  type: git<br>  repo: 用户名@ip地址:&#x2F;www&#x2F;hexo.git<br>  branch: master<br> 3. 新建文章并部署到服务器</p>
+<p>hexo new “这是一篇文章” # 发布新文章<br>hexo clean &amp; hexo g -d # 生成文章并部署到服务端<br>这时候在网页中输入你的服务器ip即可看到你的个人博客了<br>————————————————<br>版权声明：本文为CSDN博主「Jayden555」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Jonder_wu/article/details/101910036">https://blog.csdn.net/Jonder_wu/article/details/101910036</a></p>
 
     </div>
 
@@ -316,7 +255,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://louiskin59.github.io/2022/05/11/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="常用命令">https://louiskin59.github.io/2022/05/11/常用命令/</a>
+    <a href="https://louiskin59.github.io/2022/05/19/%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88ubuntu%EF%BC%89%E6%90%AD%E5%BB%BAhexo/" title="服务器（ubuntu）搭建hexo">https://louiskin59.github.io/2022/05/19/服务器（ubuntu）搭建hexo/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -333,13 +272,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/05/11/%E5%86%99%E4%BD%9C%E6%96%B9%E5%BC%8F/" rel="prev" title="Pixar讲故事的公式">
-      <i class="fa fa-chevron-left"></i> Pixar讲故事的公式
+    <a href="/2022/05/17/%E6%88%90%E4%BB%BF%E5%90%BE%E6%95%99%E8%82%B2%E7%AE%B4%E8%A8%80/" rel="prev" title="成仿吾教育箴言">
+      <i class="fa fa-chevron-left"></i> 成仿吾教育箴言
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/05/11/%E8%85%BE%E8%AE%AF%E4%BA%91-%E4%BA%91%E5%BC%80%E5%8F%91CLI%E5%B7%A5%E5%85%B7-%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%89%98%E7%AE%A1/" rel="next" title="腾讯云-云开发CLI工具-静态网站托管">
-      腾讯云-云开发CLI工具-静态网站托管 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -398,7 +334,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#new"><span class="nav-number">1.</span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#generate"><span class="nav-number">2.</span> <span class="nav-text">generate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#server"><span class="nav-number">3.</span> <span class="nav-text">server</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E6%9E%9C%E6%9C%89-default-%E8%BF%99%E4%B8%AA%E6%96%87%E4%BB%B6%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%B0%86%E9%87%8C%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E5%85%88%E6%B3%A8%E9%87%8A%E6%8E%89%EF%BC%8C%E6%88%96%E8%80%85%E5%88%A0%E6%8E%89default%E8%BF%99%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">如果有 default 这个文件，可以将里面的内容先注释掉，或者删掉default这个文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%84%B6%E5%90%8E"><span class="nav-number">2.</span> <span class="nav-text">然后</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%99%E5%85%A5"><span class="nav-number">3.</span> <span class="nav-text">写入</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

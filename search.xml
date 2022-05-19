@@ -3,6 +3,64 @@
   
     
     <entry>
+      <title><![CDATA[服务器（ubuntu）搭建hexo]]></title>
+      <url>/2022/05/19/%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88ubuntu%EF%BC%89%E6%90%AD%E5%BB%BAhexo/</url>
+      <content type="html"><![CDATA[<p>一、本地</p>
+<ol>
+<li>配置ssh免密钥登陆服务器</li>
+</ol>
+<p>ssh-copy-id 用户名@ip地址<br>二、服务端</p>
+<ol>
+<li>安装 nginx</li>
+</ol>
+<p>sudo apt-get install nginx # 安装nginx<br>nginx相关命令</p>
+<p>nginx -t # 查看nginx配置文件，并检查配置是否正确<br>nginx -s reload # 重新加载<br>nginx -s reopend # 重新启动<br>nginx -s stop # 关闭<br>配置 Nginx</p>
+<p>cd &#x2F;etc&#x2F;nginx&#x2F;sites-enabled</p>
+<h1 id="如果有-default-这个文件，可以将里面的内容先注释掉，或者删掉default这个文件"><a href="#如果有-default-这个文件，可以将里面的内容先注释掉，或者删掉default这个文件" class="headerlink" title="如果有 default 这个文件，可以将里面的内容先注释掉，或者删掉default这个文件"></a>如果有 default 这个文件，可以将里面的内容先注释掉，或者删掉default这个文件</h1><h1 id="然后"><a href="#然后" class="headerlink" title="然后"></a>然后</h1><p>vim hexo</p>
+<h1 id="写入"><a href="#写入" class="headerlink" title="写入"></a>写入</h1><p>server {<br>    listen       80;<br>    root   &#x2F;www&#x2F;hexo; # 这里的意思是挂载&#x2F;www&#x2F;hexo目录</p>
+<pre><code>location / &#123;
+ index  index.html index.htm;
+&#125;
+</code></pre>
+<p>}<br>2. 配置 git 远程仓库</p>
+<p>有些文章是先新建一个用户，然后在该用户下去新建 git 远程仓库，由于我当时配置有问题，一直推不上去，就不新建用户，直接在root下配置</p>
+<p>cd &#x2F;wwww  # 随便在哪里创建都可以</p>
+<p>git init –bare hexo.git # 初始化一个仓库</p>
+<p>cd &#x2F;www&#x2F;hexo.git&#x2F;hooks</p>
+<p>vim post-receive  &#x2F;&#x2F;这个文件中的脚本会监听这个git的仓库的每一次push上来的事件，push到这个仓库一次，里面的脚本就执行一次</p>
+<p>然后写入 </p>
+<p>#!&#x2F;bin&#x2F;sh<br>git –work-tree&#x3D;&#x2F;www&#x2F;hexo –git-dir&#x3D;&#x2F;www&#x2F;hexo.git checkout -f  # 前面的&#x2F;www&#x2F;hexo与上述nginx配置挂载的目录一致<br>这个脚本的意思就是把&#x2F;www&#x2F;hexo.git 这个仓库的分支同步到&#x2F;www&#x2F;hexo文件夹中</p>
+<p>然后更改权限</p>
+<p>chmod 777 post-receive<br>三、本地</p>
+<ol>
+<li>hexo网站搭建</li>
+</ol>
+<p>hexo ini # 初始化博客<br>然后进行配置，详见 <a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<ol start="2">
+<li>修改 _config.yml</li>
+</ol>
+<p>deploy:<br>  type: git<br>  repo: 用户名@ip地址:&#x2F;www&#x2F;hexo.git<br>  branch: master<br> 3. 新建文章并部署到服务器</p>
+<p>hexo new “这是一篇文章” # 发布新文章<br>hexo clean &amp; hexo g -d # 生成文章并部署到服务端<br>这时候在网页中输入你的服务器ip即可看到你的个人博客了<br>————————————————<br>版权声明：本文为CSDN博主「Jayden555」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/Jonder_wu/article/details/101910036">https://blog.csdn.net/Jonder_wu/article/details/101910036</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[成仿吾教育箴言]]></title>
+      <url>/2022/05/17/%E6%88%90%E4%BB%BF%E5%90%BE%E6%95%99%E8%82%B2%E7%AE%B4%E8%A8%80/</url>
+      <content type="html"><![CDATA[<p>1.人类社会的不幸之最大的原因是因为同情的缺乏。</p>
+<p>2.大抵趣味的高低可以暗示各人所受的教养是不是完善。</p>
+<p>3.教师是引路人，带个路，指明给他，不要牵着他走，或者抱着走。</p>
+<p>4.当我们意识到自己不过是大自然的一部分，与四时的变化不单是外部的现象的时候，我们才能发现自己是很脆弱，而易于为这种变化所感。</p>
+<p>5师范教育在整个国民教育体系中占有极重要的地位。只有办好师范教育，才能更好地促进中、小学乃至大学教育质量的提高。在这个意义上讲，师范教育是整个国民教育的基础，办好各级师范教育是关键。</p>
+<p>6.校与研究机关不同，研究机关主要搞科研，高等学校主要搞教学。当然科研要提倡，在搞好教学的同时，要搞科研，不搞科研，教学质量也不能提高，这是目前利益与长远利益结合的问题，但不能把目前利益牺牲掉。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hexo-Next主题配置]]></title>
       <url>/2022/05/12/Hexo-Next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/</url>
       <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/cike626/article/details/119657335">Hexo-Next主题配置_cike626的博客-CSDN博客_hexo next主题配置</a></p>
